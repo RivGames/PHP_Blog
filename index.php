@@ -1,8 +1,7 @@
 <?php
 session_start();
-echo $_SESSION['id'];
-echo $_SESSION['password'];
 ?>
+echo "1";
 <!DOCTYPE html>
 
 <html lang='en'>
