@@ -1,0 +1,32 @@
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width', user-scalable=no, initial-scale=1.0>
+<title>Register</title>
+<link rel="stylesheet" href="main_2.css">
+</head>
+<body>
+    <center>
+        <form action="registration.php" method="POST">
+            <fieldset>
+                <legend align="right">Форма регистрации</legend>
+                <table>
+                    <tr>
+                        <td><label for="name">Введите Имя:</label></td>
+                        <td><input name="name" placeholder="Имя"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Пароль"></label> Пароль:</td>
+                        <td><input  name="password" type="password" placeholder="Пароль"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Подтвердите Пароль"></label> Пароль:</td>
+                        <td><input  name="password1" type="confirm" placeholder="Пароль"></td>
+                    </tr>
+                </table>
+                <button type="submit" >Отправить!</button>
+            </fieldset>
+        </form>
+    </center>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body{
+    background-color: blue;
+    max-width: 960px;
+    margin: 0 auto
+}
+div{
+    border: 1px solid black;
+    padding:5px 15px;
+}
+h4{
+    text-align: center;
+
+}
+.header{
+    border-radius: 10px 10px 0 0;
+    margin-top: 20px;
+    background-color: chartreuse;
+    min-height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sidebar{
+    background-color: rgb(255, 180, 180);
+    float:left;
+    margin-right: 10px;
+    max-width: 200px;
+    min-width: 150px;
+
+}
+.sidebar1{
+    background:lightblue;
+    float:right;
+    margin-left: 10px;
+    max-width: 200px;
+}
+.container{
+    text-align: justify;
+    background: salmon;
+    margin-bottom: 10px;
+}
+.footer{
+    font-weight: bold;
+    background: gold;
+    color:indigo;
+    min-height: 30px;
+    line-height: 30px;
+    border-radius: 0 0 10px 10px;
+
+}
