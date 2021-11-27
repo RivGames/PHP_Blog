@@ -1,8 +1,5 @@
 <?php
 session_start();
-echo "1";
-echo "2";
-echo "1";
 
 ?>
 <!DOCTYPE html>
@@ -12,7 +9,8 @@ echo "1";
 <meta charset='UTF-8'>
 <meta name='viewport' content='width=device-width', user-scalable=no, initial-scale=1.0>
 <title>My first blog on PHP</title>
-<link rel="stylesheet" href="main_1.css">
+<link rel="stylesheet" href="css\main_1.css">
+<link rel="stylesheet" href="css\main_2.css">
 </head>
 <body>
     <div class="header">
@@ -26,9 +24,10 @@ echo "1";
             <li><a href="registration.html">Регистрация</a></li>
             <li><a href="auth.html">Авторизация</a></li>
             <li><a href="logout.php">Logout</a></li>
-            <li><a href="">Статьи</a></li>
-            <li><a href="">Создать статью</a></li>
+            <li><a href="posts.php">Статьи</a></li>
+            <li><a href="create_article.php">Создать статью</a></li>
             <li><a href="about_me.php">Об разработчике сайта</a></li>
+            <li><a href="admin.php">Админка</a></li>
         </ul>
     </div>
     <div class="sidebar1">

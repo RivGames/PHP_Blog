@@ -1,4 +1,6 @@
-
+body{
+    background-color: aqua;
+}
 form fieldset{
     width: 800px;
 }

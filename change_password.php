@@ -1,20 +1,20 @@
 <?php
-$host = "localhost";
-$my_name = "root";
-$my_password_db= "";
-$my_name_of_db ='blog';
-
-$link = mysqli_connect($host,$my_name,$my_password_db,$my_name_of_db);
+include_once 'connect_to_bd.php';
 session_start();
 $_SESSION['id'];
+/*
+    Первым делом беру текущий пароль и айди пользователя
+    Потом проверяю если что-то в инпутах если есть присваиваю значение переменным
+    Если пароль старый совпадает с текущим паролем то..
+    Делаю запрос к БД где меняю новый пароль с текущим
+    Делаю пометку в $_SESSION['password']=$password;
+    Все пароль изменён
+*/
 $password = $_SESSION['password'];
 $id = $_SESSION['id'];
 if(!empty($_POST['newpassword'] and !empty($_POST['oldpassword']))){
     $newpassword = $_POST['newpassword'];
     $oldpassword = $_POST['oldpassword'];
-    // echo "$password";//123
-    // echo "$newpassword";//12
-    // echo "$oldpassword";//123
     if($oldpassword == $password){
         $query = "UPDATE users SET password='$newpassword' WHERE id='$id'";
         mysqli_query($link,$query);
@@ -24,8 +24,6 @@ if(!empty($_POST['newpassword'] and !empty($_POST['oldpassword']))){
     }else{
         echo "<b>Старый пароль не правильный!</b>";
     }
-    // $old_password = mysqli_fetch_assoc($result);
-    // var_dump($old_password);
 }else{
     echo 'Empty!';
 }

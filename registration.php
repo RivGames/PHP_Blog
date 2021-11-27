@@ -1,11 +1,5 @@
-
 <?php
-$host = "localhost";//подключаюсь к phpmyAdmin
-$my_name = "root";
-$my_password_db= "";
-$my_name_of_db ='blog';
-
-$link = mysqli_connect($host,$my_name,$my_password_db,$my_name_of_db);
+include_once 'connect_to_bd.php';
 session_start();//начинаю сессию
 if(!empty($_POST['name']) and !empty($_POST['password'] and !empty($_POST['password1']))){
     if($_POST['password'] == $_POST['password1']){//проверяю первый пароль со вторым
@@ -13,7 +7,7 @@ if(!empty($_POST['name']) and !empty($_POST['password'] and !empty($_POST['passw
         $login = $_POST['name'];
         $password = $_POST['password'];
         $date = date("Y-m-d");//сдлелал еще и дату когда пользователь зарегистрировался
-        $query = "INSERT INTO users SET login='$login', password='$password',date='$date'";
+        $query = "INSERT INTO users SET login='$login', password='$password',date='$date',status_id=0,banned=0";
         //добавляю всё в б БД
         mysqli_query($link,$query);
 
