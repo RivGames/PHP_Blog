@@ -1,0 +1,46 @@
+body{
+    background-color: aqua;
+}
+form fieldset{
+    width: 800px;
+}
+form legend, form label{
+    font-size: 20px;
+    font-weight: bold;
+    color:darkblue;
+}
+form table{
+    font-size: 18px;
+    font-weight: bold;
+    color:darkblue;
+}
+form button{
+    height: 50px;
+    font-size: 20px;
+    color: blue;
+    background: gold;
+    border-radius: 10px;
+    padding: 10px 15px;
+    line-height: 25px;
+    border: none;
+}
+form button:hover{
+    background: rgb(107, 91, 21);
+    color: ivory;
+
+}
+form input form textarea{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: Cambria;
+    border: 2px solid crimson;
+    padding-left: 10px;
+
+
+}
+
+input:focus,textarea:focus{
+    border: 2px groove darkred;
+}
